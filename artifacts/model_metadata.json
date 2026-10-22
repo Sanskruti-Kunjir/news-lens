@@ -1,0 +1,91 @@
+{
+  "artifact_schema_version": 1,
+  "model_version": "v20261020191849",
+  "model_name": "linear_svm",
+  "params": {
+    "C": 1.0
+  },
+  "score_type": "decision_score",
+  "input_mode": "combined",
+  "supported_input_modes": [
+    "combined"
+  ],
+  "tfidf_params": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 2,
+    "max_df": 0.9,
+    "sublinear_tf": true,
+    "strip_accents": "unicode"
+  },
+  "trained_at_utc": "2026-10-20T19:18:49.142098+00:00",
+  "random_seed": 42,
+  "dataset_fingerprint": "a075a8066190401a",
+  "sample_size": 60000,
+  "n_categories": 42,
+  "categories": [
+    "ARTS",
+    "ARTS & CULTURE",
+    "BLACK VOICES",
+    "BUSINESS",
+    "COLLEGE",
+    "COMEDY",
+    "CRIME",
+    "CULTURE & ARTS",
+    "DIVORCE",
+    "EDUCATION",
+    "ENTERTAINMENT",
+    "ENVIRONMENT",
+    "FIFTY",
+    "FOOD & DRINK",
+    "GOOD NEWS",
+    "GREEN",
+    "HEALTHY LIVING",
+    "HOME & LIVING",
+    "IMPACT",
+    "LATINO VOICES",
+    "MEDIA",
+    "MONEY",
+    "PARENTING",
+    "PARENTS",
+    "POLITICS",
+    "QUEER VOICES",
+    "RELIGION",
+    "SCIENCE",
+    "SPORTS",
+    "STYLE",
+    "STYLE & BEAUTY",
+    "TASTE",
+    "TECH",
+    "THE WORLDPOST",
+    "TRAVEL",
+    "U.S. NEWS",
+    "WEDDINGS",
+    "WEIRD NEWS",
+    "WELLNESS",
+    "WOMEN",
+    "WORLD NEWS",
+    "WORLDPOST"
+  ],
+  "split": {
+    "seed": 42,
+    "stratified": true,
+    "rare_classes_train_only": [],
+    "train_size": 42000,
+    "validation_size": 9000,
+    "test_size": 9000,
+    "headline_overlap_train_test": 21,
+    "headline_overlap_train_validation": 24,
+    "final_model_trained_on": "train+validation",
+    "evaluated_on": "test"
+  },
+  "libraries": {
+    "python": "3.13.13",
+    "scikit_learn": "1.9.1",
+    "pandas": "3.0.6",
+    "numpy": "2.5.4",
+    "joblib": "1.6.0"
+  }
+}

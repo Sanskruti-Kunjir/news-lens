@@ -1,0 +1,180 @@
+{
+  "evaluation_split": "validation",
+  "input_mode": "combined",
+  "selection_rule": "highest macro_f1; ties -> accuracy -> simpler model (NB < SVM < LR)",
+  "selected": {
+    "model": "linear_svm",
+    "params": {
+      "C": 1.0
+    }
+  },
+  "best_per_algorithm": [
+    {
+      "model": "linear_svm",
+      "params": {
+        "C": 1.0
+      },
+      "score_type": "decision_score",
+      "train_seconds": 13.318,
+      "convergence_warning": false,
+      "accuracy": 0.5864444444444444,
+      "macro_precision": 0.5083316801664706,
+      "macro_recall": 0.3942871391999792,
+      "macro_f1": 0.4241169491643245,
+      "weighted_f1": 0.557958695968171,
+      "latency_ms_per_article": 0.0607
+    },
+    {
+      "model": "logistic_regression",
+      "params": {
+        "C": 5.0
+      },
+      "score_type": "probability",
+      "train_seconds": 236.799,
+      "convergence_warning": false,
+      "accuracy": 0.574,
+      "macro_precision": 0.5677572819266038,
+      "macro_recall": 0.3540651131371413,
+      "macro_f1": 0.3927555301229796,
+      "weighted_f1": 0.536698037332647,
+      "latency_ms_per_article": 0.0684
+    },
+    {
+      "model": "multinomial_nb",
+      "params": {
+        "alpha": 0.1
+      },
+      "score_type": "probability",
+      "train_seconds": 3.954,
+      "convergence_warning": false,
+      "accuracy": 0.4673333333333333,
+      "macro_precision": 0.5972283063997716,
+      "macro_recall": 0.18851687390612618,
+      "macro_f1": 0.20152325872899093,
+      "weighted_f1": 0.3795655480660907,
+      "latency_ms_per_article": 0.1612
+    }
+  ],
+  "all_results": [
+    {
+      "model": "linear_svm",
+      "params": {
+        "C": 1.0
+      },
+      "score_type": "decision_score",
+      "train_seconds": 13.318,
+      "convergence_warning": false,
+      "accuracy": 0.5864444444444444,
+      "macro_precision": 0.5083316801664706,
+      "macro_recall": 0.3942871391999792,
+      "macro_f1": 0.4241169491643245,
+      "weighted_f1": 0.557958695968171,
+      "latency_ms_per_article": 0.0607
+    },
+    {
+      "model": "linear_svm",
+      "params": {
+        "C": 0.5
+      },
+      "score_type": "decision_score",
+      "train_seconds": 13.689,
+      "convergence_warning": false,
+      "accuracy": 0.5874444444444444,
+      "macro_precision": 0.5244026276109673,
+      "macro_recall": 0.3849473430130341,
+      "macro_f1": 0.41633613588618523,
+      "weighted_f1": 0.5537515101699326,
+      "latency_ms_per_article": 0.0697
+    },
+    {
+      "model": "logistic_regression",
+      "params": {
+        "C": 5.0
+      },
+      "score_type": "probability",
+      "train_seconds": 236.799,
+      "convergence_warning": false,
+      "accuracy": 0.574,
+      "macro_precision": 0.5677572819266038,
+      "macro_recall": 0.3540651131371413,
+      "macro_f1": 0.3927555301229796,
+      "weighted_f1": 0.536698037332647,
+      "latency_ms_per_article": 0.0684
+    },
+    {
+      "model": "linear_svm",
+      "params": {
+        "C": 0.1
+      },
+      "score_type": "decision_score",
+      "train_seconds": 11.074,
+      "convergence_warning": false,
+      "accuracy": 0.5576666666666666,
+      "macro_precision": 0.589106185306294,
+      "macro_recall": 0.3195000211575521,
+      "macro_f1": 0.3493944480455482,
+      "weighted_f1": 0.5032979174797898,
+      "latency_ms_per_article": 0.0807
+    },
+    {
+      "model": "logistic_regression",
+      "params": {
+        "C": 1.0
+      },
+      "score_type": "probability",
+      "train_seconds": 124.749,
+      "convergence_warning": false,
+      "accuracy": 0.5253333333333333,
+      "macro_precision": 0.5803580326753527,
+      "macro_recall": 0.261314637704229,
+      "macro_f1": 0.28691533887148746,
+      "weighted_f1": 0.45960169342994583,
+      "latency_ms_per_article": 0.0695
+    },
+    {
+      "model": "multinomial_nb",
+      "params": {
+        "alpha": 0.1
+      },
+      "score_type": "probability",
+      "train_seconds": 3.954,
+      "convergence_warning": false,
+      "accuracy": 0.4673333333333333,
+      "macro_precision": 0.5972283063997716,
+      "macro_recall": 0.18851687390612618,
+      "macro_f1": 0.20152325872899093,
+      "weighted_f1": 0.3795655480660907,
+      "latency_ms_per_article": 0.1612
+    },
+    {
+      "model": "multinomial_nb",
+      "params": {
+        "alpha": 0.3
+      },
+      "score_type": "probability",
+      "train_seconds": 3.777,
+      "convergence_warning": false,
+      "accuracy": 0.3898888888888889,
+      "macro_precision": 0.5393676414952624,
+      "macro_recall": 0.11628059616755242,
+      "macro_f1": 0.11155053697618526,
+      "weighted_f1": 0.27996573202901553,
+      "latency_ms_per_article": 0.108
+    },
+    {
+      "model": "multinomial_nb",
+      "params": {
+        "alpha": 1.0
+      },
+      "score_type": "probability",
+      "train_seconds": 4.134,
+      "convergence_warning": false,
+      "accuracy": 0.31266666666666665,
+      "macro_precision": 0.2706778937407148,
+      "macro_recall": 0.07367628771600693,
+      "macro_f1": 0.062493622106524725,
+      "weighted_f1": 0.201945459156998,
+      "latency_ms_per_article": 0.1307
+    }
+  ]
+}

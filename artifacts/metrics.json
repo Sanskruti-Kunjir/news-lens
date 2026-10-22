@@ -1,0 +1,17 @@
+{
+  "evaluation_split": "test",
+  "model": "linear_svm",
+  "params": {
+    "C": 1.0
+  },
+  "input_mode": "combined",
+  "score_type": "decision_score",
+  "train_seconds": 17.231,
+  "test_size": 9000,
+  "accuracy": 0.5947777777777777,
+  "macro_precision": 0.5315623911098966,
+  "macro_recall": 0.4076154374248623,
+  "macro_f1": 0.4408133933613335,
+  "weighted_f1": 0.5687365217203596,
+  "latency_ms_per_article": 0.0785
+}
